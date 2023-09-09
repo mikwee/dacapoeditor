@@ -6,7 +6,7 @@
     "orientation": "landscape-primary",
     "background_color": "#fffff0",
     "theme_color": "#fffff0",
-    "description": "An online scorewriter based on ABC notation.",
+    "description": "DaCapo Editor is a music sheet editor based on the ABC syntax.",
     "icons": [
       {
         "src": "images/icons/dacapo192.png",
