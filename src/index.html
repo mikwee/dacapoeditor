@@ -6,8 +6,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="author" content="Manfred Schulenburg">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="worker-src 'self'">
+    <meta name="theme-color" content="#fffff0">
     <link href="style.css" rel="stylesheet" type="text/css" media="screen">
     <link rel="shortcut" href="favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json">
     <title>DaCapo Editor - ABC Music Editor</title>
     <link rel="stylesheet" type="text/css" href="abcjs-audio.css">
     <link rel="icon" type="image/png" href="images/icons/dacapo.png" />
@@ -31,6 +34,10 @@
           }
         });
       };
+
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
   </script>
 
   <style>
